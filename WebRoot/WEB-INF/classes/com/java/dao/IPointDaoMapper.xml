@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.java.dao.IPointInfoDao">
+  <!--
+   namespace:必须与对应接口的类名一致
+   id：与接口中的方法名一致
+   -->
+   
+   <!-- 查询 -->
+   <select id="getPoint"  resultType="Map_point">
+     select * from map_point 
+   </select>
+	<insert id="addPoint" parameterType="Map_point">
+		insert into map_point(longitude,latitude,city,slogen,start,end)
+       values(#{longitude},#{latitude},#{city},#{slogen},#{start},#{end}})
+	</insert>
+	<update id="updatePoint" parameterType="Map_point">
+   		 update map_point set longitude=#{longitude},latitude=#{latitude},city=#{city},slogen=#{slogen},start=#{start},end=#{end} where id=#{id}  
+   </update>
+</mapper>
