@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration   
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 打印查询语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+    </settings>
+    
+     <typeAliases>  
+      <!--  
+                          通过package, 可以直接指定package的名字， mybatis会自动扫描你指定包下面的javabean,  
+                          并且默认设置一个别名，默认的名字为： javabean 的首字母小写的非限定类名来作为它的别名。  
+                          也可在javabean 加上注解@Alias 来自定义别名， 例如： @Alias(user)   
+          <package name="com.dy.entity"/>  
+       -->  
+       <typeAlias alias="User" type="com.java.po.User"/>
+       <typeAlias alias="Amusement_facility" type="com.java.po.Amusement_facility"/>
+       <typeAlias alias="Catering_industry" type="com.java.po.Catering_industry"/>
+       <typeAlias alias="Map_point" type="com.java.po.Map_point"/>
+       <typeAlias alias="Amusement_information" type="com.java.po.Amusement_information"/>
+  	</typeAliases>  
+    
+</configuration>
