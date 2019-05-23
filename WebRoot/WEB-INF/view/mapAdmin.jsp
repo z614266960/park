@@ -105,11 +105,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </a>
                 </li>
                   <li class="sidebar-nav-link">
-                    <a href="MapCtrl/toMap">
-                        <i class="am-icon-edit sidebar-nav-link-logo" class="active"></i> 管理地址信息
+                    <a href="MapCtrl/toMap" class="active">
+                        <i class="am-icon-edit sidebar-nav-link-logo" ></i> 管理地址信息
                     </a>
                 </li>
-                
+                <li class="sidebar-nav-link">
+                    <a href="PassCtrl/toAddPassCard">
+                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加PassCard信息
+                    </a>
+                </li>
+                <li class="sidebar-nav-link">
+                    <a href="PassCtrl/toPassCard">
+                        <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理PassCard信息
+                    </a>
+                </li>
 
             </ul>
         </div>

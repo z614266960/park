@@ -22,7 +22,30 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <link rel="stylesheet" href="assets/css/amazeui.css"/>
   <link rel="stylesheet" href="assets/css/style1.css"/>
   <link rel="stylesheet" href="assets/css/style.css"/>
+ 
   <style type="text/css">
+  .tpl-header-search-box,
+.tpl-header-search-btn {
+  transition: all 0.4s ease-in-out;
+  color: #848c90;
+  background: none;
+  border: none;
+  outline: none;
+}
+.tpl-header-search-box {
+  font-size: 14px;
+}
+.tpl-header-search-box:hover,
+.tpl-header-search-box:active {
+  color: #fff;
+}
+.tpl-header-search-btn {
+  font-size: 15px;
+}
+.tpl-header-search-btn:hover,
+.tpl-header-search-btn:active {
+  color: #fff;
+}
    
   </style>
 </head>
@@ -44,10 +67,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class=" am-topbar-left am-form-inline am-topbar-right" role="search">
       <ul class="am-nav am-nav-pills am-topbar-nav hw-menu">
       <li ><a href="AmusementCtrl/toTouristAmusementView" >乐园城信息总览</a></li>
+      <li><a href="PassCtrl/toShowPassCard">PassCard信息</a></li>
       <li ><a href="FacilityCtrl/toTouristFacility">游乐项目信息 </a></li>
       <li class="hw-menu-active"><a href="CateringCtrl/toTouristCateringView">餐饮服务</a></li>
       <li><a href="LoginCtrl/toTourist_map">导览地图</a></li>
-      <li><a href="LoginCtrl/toLogin">登录&注册</a></li>
+      <li><a href="LoginCtrl/toLogin">退出登录</a></li>
     </ul>
     </div>
 

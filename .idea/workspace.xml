@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c27434fc-ec6a-4c76-bcad-55d41838fca4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/WebRoot/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/java/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/java/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/config/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/config/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/config/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/config/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/addCatering.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/addCatering.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/addFacility.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/addFacility.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/cateringView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/cateringView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/eat_drink.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/eat_drink.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/facility.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/facility.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/facilityView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/facilityView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/mapAdmin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/mapAdmin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/tourist_index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/tourist_index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/view/tourist_map.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/view/tourist_map.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/admin1.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/admin1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/amazeui.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/amazeui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/amazeui.flat.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/amazeui.flat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/fullcalendar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/fullcalendar.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/fullcalendar.print.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/fullcalendar.print.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/snow.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/snow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/css/style1.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/css/style1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.datatables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.datatables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.ie8polyfill.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.ie8polyfill.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.ie8polyfill.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.ie8polyfill.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.widgets.helper.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.widgets.helper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.widgets.helper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/amazeui.widgets.helper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/echarts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/echarts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/fullcalendar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/handlebars.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/handlebars.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/jquery-2.1.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/jquery-2.1.4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/jquery.magnific-popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/jquery.magnific-popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/resource/assets/js/moment.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/resource/assets/js/moment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/java/dao/IRegisterInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/java/dao/IRegisterInfoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/SqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/jdbc.properties" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/java/controller/PassCardController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-744">
+              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.0" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadSourcesAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SSM_exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_exercise" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c27434fc-ec6a-4c76-bcad-55d41838fca4" name="Default Changelist" comment="" />
+      <created>1558614100161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558614100161</updated>
+      <workItem from="1558614104317" duration="89000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="89000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/java/controller/PassCardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-744">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SSM_exercise</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -74,29 +74,39 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 </li>
                 <li class="sidebar-nav-link">
                     <a href="FacilityCtrl/toAddFacility">
-                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 管理游乐项目
+                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加游乐项目
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
                     <a href="FacilityCtrl/toFacilityView">
-                        <i class="am-icon-table sidebar-nav-link-logo"></i> 查看游乐项目
+                        <i class="am-icon-table sidebar-nav-link-logo"></i> 管理游乐项目
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
                     <a href="CateringCtrl/toaddCatering" class="active">
-                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 管理餐饮信息
+                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加餐饮信息
                     </a>
                 </li>
                 
                 <li class="sidebar-nav-link">
                     <a href="CateringCtrl/toCateringView">
-                        <i class="am-icon-table sidebar-nav-link-logo"></i> 查询餐饮信息
+                        <i class="am-icon-table sidebar-nav-link-logo"></i> 管理餐饮信息
                     </a>
                 </li>
                 
                 <li class="sidebar-nav-link">
                     <a href="MapCtrl/toMap">
                         <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理地址信息
+                    </a>
+                </li>
+                <li class="sidebar-nav-link">
+                    <a href="PassCtrl/toAddPassCard">
+                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加PassCard信息
+                    </a>
+                </li>
+                <li class="sidebar-nav-link">
+                    <a href="PassCtrl/toPassCard">
+                        <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理PassCard信息
                     </a>
                 </li>
             </ul>       
@@ -196,7 +206,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
                                     
                                     <div class="am-form-group">
-                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">营业许可证 <span class="tpl-form-line-small-title">license_img</span></label>
+                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">餐饮图片 <span class="tpl-form-line-small-title">license_img</span></label>
                                         <div class="am-u-sm-9">
                                             <div class="am-form-group am-form-file">
                                                 <div class="tpl-form-file-img">

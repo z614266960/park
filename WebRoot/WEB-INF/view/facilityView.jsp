@@ -102,7 +102,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 
                 <li class="sidebar-nav-link">
                     <a href="CateringCtrl/toCateringView">
-                        <i class="am-icon-table sidebar-nav-link-logo"></i>管理餐饮信息
+                        <i class="am-icon-table sidebar-nav-link-logo"></i> 管理餐饮信息
                     </a>
                 </li>
                 
@@ -111,7 +111,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理地址信息
                     </a>
                 </li>
-                
+                <li class="sidebar-nav-link">
+                    <a href="PassCtrl/toAddPassCard">
+                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加PassCard信息
+                    </a>
+                </li>
+                <li class="sidebar-nav-link">
+                    <a href="PassCtrl/toPassCard">
+                        <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理PassCard信息
+                    </a>
+                </li>
                
 
             </ul>
@@ -136,7 +145,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <button class="tpl-header-search-btn am-icon-search" id="searchBtn" onclick="search()"></button>
                         <c:set var="name" value="${name}"></c:set>
                         <input class="tpl-header-search-box" type="text" placeholder="搜索设备名称关键字..." id="searchText"
-                        <c:if test="${!empty name}">value=" ${name }"</c:if>>
+                        <c:if test="${!empty name}">value="${name}"</c:if>>
                         
                     </form>
                 </div>
@@ -324,10 +333,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			processData:false,
 	        contentType:false,
 	        success : function(data){
-	        	if(data!=null&&data!=""){
-	        		fileRealPath = data;
+	        if(data!=null&&data!=""){
+	        	fileRealPath = data;
 	        	}else{
-	        		
 	        	}
 				$.ajax({
 					url:"FacilityCtrl/updateFacility",

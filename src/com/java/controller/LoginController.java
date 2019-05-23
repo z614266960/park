@@ -111,6 +111,11 @@ public class LoginController {
 		return "register";
 	}
 	
+	@RequestMapping("/toPassCard")
+	public String toPassCard(){
+		return "register";
+	}
+	
 	@RequestMapping("/tofile")
 	public String tofile(){
 		return "file";

@@ -87,7 +87,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
     }else if(pwd.length<6){
     alert("密码至少大于等于6位");
-    return;
+         return;
     }
      $.ajax({
      	url:"RegisterCtrl/doRegister",

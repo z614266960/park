@@ -118,10 +118,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class=" am-topbar-left am-form-inline am-topbar-right" role="search">
       <ul class="am-nav am-nav-pills am-topbar-nav hw-menu">
       <li class="hw-menu-active"><a href="AmusementCtrl/toTouristAmusementView">乐园城信息总览</a></li>
+      <li><a href="PassCtrl/toShowPassCard">PassCard信息</a></li>
       <li><a href="FacilityCtrl/toTouristFacility">游乐项目信息 </a></li>
       <li ><a href="CateringCtrl/toTouristCateringView">餐饮服务</a></li>
       <li><a href="LoginCtrl/toTourist_map">导览地图</a></li>
-      <li><a href="LoginCtrl/toLogin">登录&注册</a></li>
+      <li><a href="LoginCtrl/toLogin">退出登录</a></li>
       
     </ul>
     </div>
@@ -146,7 +147,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <div class="am-u-lg-3 am-u-md-6 am-u-sm-12 detail-mb">
 
           <h3 class="detail-h3">
-            <i class="am-icon-mobile am-icon-sm"></i>
+            <i class="am-icon-check-square-o am-icon-sm"></i>
             营业时间
           </h3>
 
@@ -156,7 +157,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </div>
         <div class="am-u-lg-3 am-u-md-6 am-u-sm-12 detail-mb">
           <h3 class="detail-h3">
-            <i class="am-icon-cogs am-icon-sm"></i>
+            <i class="am-icon-send-o am-icon-sm"></i>
             占地面积
           </h3>
 

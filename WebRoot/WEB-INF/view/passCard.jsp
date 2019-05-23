@@ -63,7 +63,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
                         <!-- 退出 -->
                         <li class="am-text-sm">
-                            <a href="LoginCtrl/toLogin">
+                           <a href="LoginCtrl/toLogin">
                                 <span class="am-icon-sign-out"></span> 退出
                             </a>
                         </li>
@@ -76,8 +76,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         <!-- 侧边导航栏 -->
         <div class="left-sidebar">
             
-		
-              <!-- 菜单 -->
+
+        <!-- 菜单 -->
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-link">
                     <a href="AmusementCtrl/toAmusementView" >
@@ -101,7 +101,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 </li>
                 
                 <li class="sidebar-nav-link">
-                    <a href="CateringCtrl/toCateringView"class="active">
+                    <a href="CateringCtrl/toCateringView">
                         <i class="am-icon-table sidebar-nav-link-logo"></i> 管理餐饮信息
                     </a>
                 </li>
@@ -111,50 +111,52 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理地址信息
                     </a>
                 </li>
-                
-               <li class="sidebar-nav-link">
+                <li class="sidebar-nav-link">
                     <a href="PassCtrl/toAddPassCard">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加PassCard信息
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="PassCtrl/toPassCard">
-                        <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理PassCard信息
+                    <a href="PassCtrl/toPassCard" class="active">
+                        <i class="am-icon-edit sidebar-nav-link-logo" ></i> 管理PassCard信息
                     </a>
                 </li>
+               
 
             </ul>
         </div>
+
 
 
         <!-- 内容区域 -->
         <div class="tpl-content-wrapper">
 
             <div class="container-fluid am-cf">
-                <div class="row">
+                <div class="row" >
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
-                        <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span> 管理<small>餐饮业务</small></div>
+                        <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span>管理<small>PassCard信息</small> </div>
                         <p class="page-header-description">在此管理您所需要的内容。</p>
                     </div>
-                </div>
-                
-                
-                <div class="am-fl tpl-header-search" >
+                 
+              </div>
+              
+              <div class="am-fl tpl-header-search" >
                     <form class="tpl-header-search-form" action="javascript:;">
                         <button class="tpl-header-search-btn am-icon-search" id="searchBtn" onclick="search()"></button>
-                        <c:set var="business_name" value="${business_name}"></c:set>
-                        <input class="tpl-header-search-box" type="text" placeholder="搜索餐饮名称关键字..." id="searchText"
-                        <c:if test="${!empty business_name}">value="${business_name}"</c:if>>
+                        <c:set var="name" value="${name}"></c:set>
+                        <input class="tpl-header-search-box" type="text" placeholder="搜索设备名称关键字..." id="searchText"
+                        <c:if test="${!empty name}">value="${name}"</c:if>>
                         
                     </form>
                 </div>
 
             </div>
- 			<div class="row-content am-cf">
+
+            <div class="row-content am-cf">
 				
 				<c:forEach var="item" items="${list}" varStatus="status">
                 <div class="row">
-				<form class="am-form tpl-form-line-form" business_id="${item.business_id }" id="${item.business_id }">
+				<form class="am-form tpl-form-line-form" facility_id="${item.id }" id="${item.id }">
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-body  widget-body-lg am-fr">
@@ -165,41 +167,52 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				                        <div class="widget am-cf">
 				                            <div class="widget-body am-fr">
 													<div class="am-form-group">
-				                                        <label for="business_name" class="am-u-sm-3 am-form-label">餐饮名称<span class="tpl-form-line-small-title">business_name</span></label>
+				                                        <label for="facilityName" class="am-u-sm-3 am-form-label">设备名称 <span class="tpl-form-line-small-title">Facility</span></label>
 				                                        <div class="am-u-sm-9">
-				                                            <input type="text" class="tpl-form-input" value="${item.business_name}" disabled="disabled">
+				                                            <input type="text" class="tpl-form-input" value="${item.name}" disabled="disabled">
 				                                        </div>
 				                                    </div>
-				                                    
-				                                   <div class="am-form-group">
-				                                        <label for="owner" class="am-u-sm-3 am-form-label">业主姓名</label>
-				                                        <div class="am-u-sm-9">
-				                                           <input type="text" class="tpl-form-input" value="${item.owner}" disabled="disabled">
-				                                        </div>
-				                                    </div>
-				                                    
+				                               
 				                                    <div class="am-form-group">
-				                                        <label for="people" class="am-u-sm-3 am-form-label">经营类型 <span class="tpl-form-line-small-title">type</span></label>
+				                                        <label for="people" class="am-u-sm-3 am-form-label">适宜人群 <span class="tpl-form-line-small-title">Suitable population</span></label>
 				                                        <div class="am-u-sm-9">
-				                                            <select disabled="disabled" data-am-selected="{searchBox: 1}" style="display: none;"id="type">
-															  <option <c:if test="${item.type == '甜品'}">selected</c:if> value="甜品">甜品</option>
-															  <option <c:if test="${item.type == '饮料'}">selected</c:if> value="饮料">饮料</option>
-															  <option <c:if test="${item.type == '中餐'}">selected</c:if> value="中餐">中餐</option>
-															   <option <c:if test="${item.type == '西餐'}">selected</c:if> value="西餐">西餐</option>
-															  <option <c:if test="${item.type == '便利店'}">selected</c:if> value="便利店">便利店</option>
-															 
+				                                            <select disabled="disabled" data-am-selected="{searchBox: 1}" style="display: none;" id="people">
+															  <option <c:if test="${item.people == '0~8周岁'}">selected</c:if> value="0~8周岁">0~8周岁</option>
+															  <option <c:if test="${item.people == '9~18周岁'}">selected</c:if> value="9~18周岁">9~18周岁</option>
+															  <option <c:if test="${item.people == '18周岁及以上健康人群'}">selected</c:if>value="18周岁及以上健康人群">18周岁及以上健康人群</option>
 															</select>
 				                                        </div>
 				                                    </div>
 				                                    
-				                                    <div class="am-form-group">
-				                                        <label for="range" class="am-u-sm-3 am-form-label">营业范围<span class="tpl-form-line-small-title">range</span></label>
+				                                     <div class="am-form-group">
+				                                        <label for="open_day" class="am-u-sm-3 am-form-label">开放日期 <span class="tpl-form-line-small-title">Open day</span></label>
 				                                        <div class="am-u-sm-9">
-				                                            <textarea disabled="disabled" class="" rows="10"  placeholder="请介绍营业范围" id="range" >${item.range }</textarea>
+				                                            <select disabled="disabled" data-am-selected="{searchBox: 1}" style="display: none;" id="open_day">
+				                                              <option <c:if test="${item.open_day == '0'}">selected</c:if> value="0">周日</option>
+															  <option <c:if test="${item.open_day == '1'}">selected</c:if> value="1">周一</option>
+															  <option <c:if test="${item.open_day == '2'}">selected</c:if> value="2">周二</option>
+															  <option <c:if test="${item.open_day == '3'}">selected</c:if> value="3">周三</option>
+															  <option <c:if test="${item.open_day == '4'}">selected</c:if> value="4">周四</option>
+															  <option <c:if test="${item.open_day == '5'}">selected</c:if> value="5">周五</option>
+															  <option <c:if test="${item.open_day == '6'}">selected</c:if> value="6">周六</option>
+															</select>
 				                                        </div>
 				                                    </div>
 				                                    
-				                                    
+				                                     <div class="am-form-group">
+				                                        <label for="close_day" class="am-u-sm-3 am-form-label">关闭日期 <span class="tpl-form-line-small-title">Close day</span></label>
+				                                        <div class="am-u-sm-9">
+				                                            <select disabled="disabled" data-am-selected="{searchBox: 1}" style="display: none;" id="close_day" >
+				                                             <option <c:if test="${item.close_day == '0'}">selected</c:if> value="0">周日</option>
+															  <option <c:if test="${item.close_day == '1'}">selected</c:if> value="1">周一</option>
+															  <option <c:if test="${item.close_day == '2'}">selected</c:if> value="2">周二</option>
+															  <option <c:if test="${item.close_day == '3'}">selected</c:if> value="3">周三</option>
+															  <option <c:if test="${item.close_day == '4'}">selected</c:if> value="4">周四</option>
+															  <option <c:if test="${item.close_day == '5'}">selected</c:if> value="5">周五</option>
+															  <option <c:if test="${item.close_day == '6'}">selected</c:if> value="6">周六</option>
+															</select>
+				                                        </div>
+				                                    </div>
 													<div class="am-form-group">
 				                                        <label for="open_time" class="am-u-sm-3 am-form-label">开始时间 <span class="tpl-form-line-small-title">Open Time</span></label>
 				                                        <div class="am-u-sm-9">
@@ -212,29 +225,40 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				                                            <input disabled="disabled" type="time" class="tpl-form-input" id="close_time" value="${item.close_time }">
 				                                        </div>
 				                                    </div>
-				                                    
-				
-				                                   
-				                                    
+													
 				                                    <div class="am-form-group">
-				                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">餐饮图片<span class="tpl-form-line-small-title">Images</span></label>
+				                                        <label for="notice" class="am-u-sm-3 am-form-label">注意事项<span class="tpl-form-line-small-title">notice</span></label>
+				                                        <div class="am-u-sm-9">
+				                                            <textarea disabled="disabled" class="" rows="10"  placeholder="请输入注意事项" id="notice" >${item.notice }</textarea>
+				                                        </div>
+				                                    </div>
+				
+				                                    <div class="am-form-group">
+				                                        <label for="information" class="am-u-sm-3 am-form-label">详细信息</label>
+				                                        <div class="am-u-sm-9">
+				                                            <textarea disabled="disabled" class="" rows="10" id="information" placeholder="请输入详细信息">${item.information }</textarea>
+				                                        </div>
+				                                    </div>
+				                                    <div class="am-form-group">
+				                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">游乐设备图片 <span class="tpl-form-line-small-title">Images</span></label>
 				                                        <div class="am-u-sm-9">
 				                                            <div class="am-form-group am-form-file">
 				                                                <div class="tpl-form-file-img">
 				                                                	<img alt="" src="
-				                                                	<c:if test="${item.license_img != ''}">
-				                                                		${item.license_img }
+				                                                	<c:if test="${item.facility_img != ''}">
+				                                                		${item.facility_img }
 				                                                	</c:if>">
 				                                                    <!-- <img src=http://s.amazeui.org/media/i/demos/bing-1.jpg  > -->
 				                                                    <!-- assets/img/a5.png -->
 				                                                </div>
 				                                                <button type="button" class="am-btn am-btn-danger am-btn-sm">
-				    												<i class="am-icon-cloud-upload"></i> 修改餐饮图片</button>
+				    												<i class="am-icon-cloud-upload"></i> 修改游乐设备图片</button>
 				                                                <input name="file" type="file" multiple="" disabled="true" class="imgInput">
 				                                            </div>
 				
 				                                        </div>
 				                                    </div>
+				                                  
 				                                 <div class="am-form-group">
                                         			<div class="am-u-sm-9 am-u-sm-push-3">
                                         				<button type="button" class="am-btn am-btn-danger tpl-btn-bg-color-success " onclick="del(this);">删除</button>
@@ -289,16 +313,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		var groups = form.find(".am-form-group");
 		
 		//获取信息
-		var business_id = form.attr("business_id");
-		var business_name = $(groups.get(0)).find("input:first").val();
-		var owner = $(groups.get(1)).find("input:first").val();
-		var type = $(groups.get(2)).find("select").val();
-		var range = $(groups.get(3)).find("textarea:first").val();
+		var id = form.attr("facility_id");
+		var name = $(groups.get(0)).find("input:first").val();
+		var people = $(groups.get(1)).find("select").val();
+		var open_day = $(groups.get(2)).find("select").val();
+		var close_day = $(groups.get(3)).find("select").val();
 		var open_time = $(groups.get(4)).find("input:first").val();
 		var close_time = $(groups.get(5)).find("input:first").val();
-		var imgsrc = $(groups.get(6)).find("img:first").attr("src");
-		var form = new FormData(document.getElementById(business_id));
-		var fileRealPath =imgsrc;
+		var notice = $(groups.get(6)).find("textarea:first").val();
+		var information = $(groups.get(7)).find("textarea:first").val();
+		var imgsrc = $(groups.get(8)).find("img:first").attr("src");
+		var form = new FormData(document.getElementById(id));
+		var fileRealPath = imgsrc;
 		
 		$.ajax({
 			url : "LoginCtrl/uploadFile",
@@ -306,63 +332,78 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			type : 'post',
 			processData:false,
 	        contentType:false,
-	         success : function(data){
-	        	if(data!=null&&data!=""){
+	        success : function(data){
+	        if(data!=null&&data!=""){
 	        	fileRealPath = data;
 	        	}else{
 	        	}
-	        	
-	        	$.ajax({
-	    			url:"CateringCtrl/updateCatering",
-	        		type:"post",
-	        		data:{
-	        			"business_id":business_id,
-	        			"business_name":business_name,
-	        			"owner":owner,
-	        			"type":type,
-	        			"range":range,
-	        			"open_time":open_time,
-	        			"close_time":close_time,
-	        			"img_path":fileRealPath
-	        		},
-	        		success:function(result){
-	        			if(result=="ok"){
-	        				alert("修改成功");
-	        				window.location.href="CateringCtrl/toCateringView";
-	        			}
-	        		}
-	    		});
-	        }
+				$.ajax({
+					url:"FacilityCtrl/updateFacility",
+		    		type:"post",
+		    		data:{
+		    			"id":id,
+		    			"name":name,
+		    			"people":people,
+		    			"open_day":open_day,
+		    			"close_day":close_day,
+		    			"open_time":open_time,
+		    			"close_time":close_time,
+		    			"information":information,
+		    			"facility_img_path":fileRealPath,
+		    			"notice":notice
+		    		},
+		    		success:function(result){//回调函数
+		    			if(result=="ok"){
+		    				alert("修改成功");
+		    				window.location.href="FacilityCtrl/toFacilityView";
+		    			}
+		    		}
+				});
+		   }
 		});
-		
-	}
+  	}
 	function del(t){
 		var form = $(t).parents("form");
 		var groups = form.find(".am-form-group");
 		
 		//获取信息
-		var id = form.attr("business_id");
-		
+		var id = form.attr("facility_id");
 		if(confirm("确认删除？")){
 			$.ajax({
-				url:"CateringCtrl/deleteCatering",
+				url:"FacilityCtrl/deleteFacility",
 	    		type:"post",
 	    		data:{
-	    			"business_id":id
+	    			"id":id
 	    		},
 	    		success:function(result){
 	    			if(result=="ok"){
 	    				alert("删除成功");
-	    				window.location.href="CateringCtrl/toCateringView";
+	    				window.location.href="FacilityCtrl/toFacilityView";
 	    			}
 	    		}
 			});
 		}
 	}
+	
 	function search(){
 		var text = $("#searchText").val();
-		window.location.href="CateringCtrl/toCateringViewWithName?business_name="+text;
+		window.location.href="FacilityCtrl/toFacilityViewWithName?name="+text;
 	}
+	
+	/* function search(){
+		var text = $("#searchText").val();
+		$.ajax({
+			url:"FacilityCtrl/toFacilityViewWithName",
+    		type:"post",
+    		async:false,
+    		data:{
+    			"name":text
+    		},
+    		success:function(result){
+    			window.location.reload();
+    		}
+		});
+	} */
 	</script>
 </body>
 

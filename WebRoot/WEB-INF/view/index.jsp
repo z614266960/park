@@ -79,8 +79,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
        			 <!-- 菜单 -->
             <ul class="sidebar-nav">
                 <li class="sidebar-nav-link">
-                    <a href="AmusementCtrl/toAmusementView">
-                        <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
+                    <a href="AmusementCtrl/toAmusementView" class="active">
+                        <i class="am-icon-home sidebar-nav-link-logo" ></i> 首页
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
@@ -106,7 +106,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 </li>
                   <li class="sidebar-nav-link">
                     <a href="MapCtrl/toMap">
-                        <i class="am-icon-edit sidebar-nav-link-logo" class="active"></i> 管理地址信息
+                        <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理地址信息
+                    </a>
+                </li>
+                <li class="sidebar-nav-link">
+                    <a href="PassCtrl/toAddPassCard">
+                        <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加PassCard信息
+                    </a>
+                </li>
+                <li class="sidebar-nav-link">
+                    <a href="PassCtrl/toPassCard">
+                        <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理PassCard信息
                     </a>
                 </li>
                 

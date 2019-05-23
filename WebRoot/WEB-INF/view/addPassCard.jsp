@@ -75,7 +75,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </a>
                 </li>
                 <li class="sidebar-nav-link">
-                    <a href="FacilityCtrl/toAddFacility" class="active">
+                    <a href="FacilityCtrl/toAddFacility">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加游乐项目
                     </a>
                 </li>
@@ -101,8 +101,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理地址信息
                     </a>
                 </li>
-                <li class="sidebar-nav-link">
-                    <a href="PassCtrl/toAddPassCard">
+                
+               <li class="sidebar-nav-link">
+                    <a href="PassCtrl/toAddPassCard"  class="active">
                         <i class="am-icon-wpforms sidebar-nav-link-logo"></i> 添加PassCard信息
                     </a>
                 </li>
@@ -111,7 +112,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         <i class="am-icon-edit sidebar-nav-link-logo"></i> 管理PassCard信息
                     </a>
                 </li>
-               
 
             </ul>
         </div>
@@ -124,7 +124,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div class="container-fluid am-cf">
                 <div class="row">
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
-                        <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span> 发布项目 <small>游乐园设施</small></div>
+                        <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span> 发布项目 <small>PassCard</small></div>
                         <p class="page-header-description">在此发布您所需要的内容。</p>
                     </div>
                 </div>
@@ -139,121 +139,47 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title am-fl">游乐项目发布</div>
+                                <div class="widget-title am-fl">PassCard发布</div>
                             </div>
                             <div class="widget-body am-fr">
 
                                 <form class="am-form tpl-form-line-form" id="f">
                                     <div class="am-form-group">
-                                        <label for="facilityName" class="am-u-sm-3 am-form-label">设备名称 <span class="tpl-form-line-small-title">Facility</span></label>
+                                        <label for="facilityName" class="am-u-sm-3 am-form-label">第一站 <span class="tpl-form-line-small-title">1st</span></label>
                                         <div class="am-u-sm-9">
-                                            <input type="text" class="tpl-form-input" id="facilityName" placeholder="请输入设备名称">
-                                            <small>填写设备文字请控制在20个字以内。</small>
-                                        </div>
-                                    </div>
-
-                        
-
-                                    <div class="am-form-group">
-                                        <label for="people" class="am-u-sm-3 am-form-label">适宜人群 <span class="tpl-form-line-small-title">Suitable population</span></label>
-                                        <div class="am-u-sm-9">
-                                            <select data-am-selected="{searchBox: 1}" style="display: none;" id="people">
-											  <option value="0~8周岁">0~8周岁</option>
-											  <option value="9~18周岁">9~18周岁</option>
-											  <option value="18周岁及以上健康人群">18周岁及以上健康人群</option>
-											</select>
-                                        </div>
-                                    </div>
-                                    
-                                     <div class="am-form-group">
-                                        <label for="open_day" class="am-u-sm-3 am-form-label">开放日期 <span class="tpl-form-line-small-title">Open day</span></label>
-                                        <div class="am-u-sm-9">
-                                            <select data-am-selected="{searchBox: 1}" style="display: none;" id="open_day">
-                                              <option value="0">周日</option>
-											  <option value="1">周一</option>
-											  <option value="2">周二</option>
-											  <option value="3">周三</option>
-											  <option value="4">周四</option>
-											  <option value="5">周五</option>
-											  <option value="6">周六</option>
-											</select>
-                                        </div>
-                                    </div>
-                                    
-                                     <div class="am-form-group">
-                                        <label for="close_day" class="am-u-sm-3 am-form-label">关闭日期 <span class="tpl-form-line-small-title">Close day</span></label>
-                                        <div class="am-u-sm-9">
-                                            <select data-am-selected="{searchBox: 1}" style="display: none;" id="close_day">
-                                              <option value="0">周日</option>
-											  <option value="1">周一</option>
-											  <option value="2">周二</option>
-											  <option value="3">周三</option>
-											  <option value="4">周四</option>
-											  <option value="5">周五</option>
-											  <option value="6">周六</option>
-											</select>
-                                        </div>
-                                    </div>
-									<div class="am-form-group">
-                                        <label for="open_time" class="am-u-sm-3 am-form-label">开始时间 <span class="tpl-form-line-small-title">Open Time</span></label>
-                                        <div class="am-u-sm-9">
-                                            <input type="time" class="tpl-form-input" id="open_time">
+                                            <input type="text" class="tpl-form-input" id="pc1" placeholder="请输入站点名称">
                                         </div>
                                     </div>
                                     <div class="am-form-group">
-                                        <label for="close_time" class="am-u-sm-3 am-form-label">关闭时间 <span class="tpl-form-line-small-title">Close Time</span></label>
+                                        <label for="facilityName" class="am-u-sm-3 am-form-label">第二站 <span class="tpl-form-line-small-title">2rd</span></label>
                                         <div class="am-u-sm-9">
-                                            <input type="time" class="tpl-form-input" id="close_time">
+                                            <input type="text" class="tpl-form-input" id="pc2" placeholder="请输入站点名称">
                                         </div>
                                     </div>
-                                    <script type="text/javascript">
-	                                    function setInitTime(){//设置初始时间
-	                                    	var open_time_input = document.getElementById("open_time");
-	                                    	var close_time_input = document.getElementById("close_time");
-	                                    	open_time_input.value = "09:00";
-	                                    	close_time_input.value = "22:00";
-	                                    }
-	                                    setInitTime();
-                                    </script>
-                                    
-                                    
-                                    
                                     <div class="am-form-group">
-                                        <label for="user-weibo" class="am-u-sm-3 am-form-label">游乐设备图片 <span class="tpl-form-line-small-title">license_img</span></label>
+                                        <label for="facilityName" class="am-u-sm-3 am-form-label">第三站 <span class="tpl-form-line-small-title">3rd</span></label>
                                         <div class="am-u-sm-9">
-                                            <div class="am-form-group am-form-file">
-                                                <div class="tpl-form-file-img">
-                                                    <img src="" alt="">
-                                                    <!-- assets/img/a5.png -->
-                                                </div>
-                                                <button type="button" class="am-btn am-btn-danger am-btn-sm">
-    												<i class="am-icon-cloud-upload"></i> 上传游乐设备图片</button>
-                                                <input id="file" type="file" name="file" multiple="">
-                                            </div>
-
+                                            <input type="text" class="tpl-form-input" id="pc3" placeholder="请输入站点名称">
                                         </div>
                                     </div>
-                                    
-                                    
-                                    
-                                    
-
                                     <div class="am-form-group">
-                                        <label for="notice" class="am-u-sm-3 am-form-label">注意事项<span class="tpl-form-line-small-title">notice</span></label>
+                                        <label for="facilityName" class="am-u-sm-3 am-form-label">第四站 <span class="tpl-form-line-small-title">4th</span></label>
                                         <div class="am-u-sm-9">
-                                            <textarea class="" rows="10"  placeholder="请输入注意事项" id="notice"></textarea>
+                                            <input type="text" class="tpl-form-input" id="pc4" placeholder="请输入站点名称">
                                         </div>
                                     </div>
-
-                                    
-
                                     <div class="am-form-group">
-                                        <label for="information" class="am-u-sm-3 am-form-label">详细信息</label>
+                                        <label for="facilityName" class="am-u-sm-3 am-form-label">第五站 <span class="tpl-form-line-small-title">5th</span></label>
                                         <div class="am-u-sm-9">
-                                            <textarea class="" rows="10" id="information" placeholder="请输入详细信息" ></textarea>
+                                            <input type="text" class="tpl-form-input" id="pc5" placeholder="请输入站点名称">
                                         </div>
                                     </div>
-                                   
+                                    <div class="am-form-group">
+                                        <label for="facilityName" class="am-u-sm-3 am-form-label">第六站 <span class="tpl-form-line-small-title">6th</span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" id="pc6" placeholder="请输入站点名称">
+                                        </div>
+                                    </div>
 
                                     <div class="am-form-group">
                                         <div class="am-u-sm-9 am-u-sm-push-3">
@@ -279,49 +205,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <script src="assets/js/ajaxfileupload.js"></script>
 	<script type="text/javascript">
 	$("#submitBtn").click(function(){
-		var facilityName = $("#facilityName").val();
-		var people = $("#people").val();
-		var open_day = $("#open_day").val();
-		var close_day = $("#close_day").val();
-		var open_time = $("#open_time").val();
-		var close_time = $("#close_time").val();
-		var notice = $("#notice").val();
-		var information = $("#information").val();
-		if(facilityName==null||facilityName==""){
-			alert("请输入名称");return;
-		}
-		//TODO 以后这里加上非空校验,图片和区域也没写
-		var form = new FormData(document.getElementById("f"));
-		var fileRealPath = "";
+		var pc1 = $("#pc1").val();
+		var pc2 = $("#pc2").val();
+		var pc3 = $("#pc3").val();
+		var pc4 = $("#pc4").val();
+		var pc5 = $("#pc5").val();
+		var pc6 = $("#pc6").val();
 		$.ajax({
-			url : "LoginCtrl/uploadFile",
-			data : form,
+			url : "PassCtrl/addPassCard",
+			data : {
+				pc1:pc1,
+				pc2:pc2,
+				pc3:pc3,
+				pc4:pc4,
+				pc5:pc5,
+				pc6:pc6,
+			},
 			type : 'post',
-			processData:false,
-	        contentType:false,
 	        success : function(data){
-	        	fileRealPath = data;
-				$.ajax({
-					url:"FacilityCtrl/addFacility",
-		    		type:"post",
-		    		data:{
-		    			"name":facilityName,
-		    			"people":people,
-		    			"open_day":open_day,
-		    			"close_day":close_day,
-		    			"open_time":open_time,
-		    			"close_time":close_time,
-		    			"information":information,
-		    			"facility_img_path":fileRealPath,
-		    			"notice":notice
-		    		},
-		    		success:function(result){
-		    			if(result=="ok"){
-		    				alert("添加成功");
-		    				window.location.href="FacilityCtrl/toAddFacility";
-		    			}
-		    		}
-				});
+	        	alert(data);
 			},
 			error : function(data){
 				

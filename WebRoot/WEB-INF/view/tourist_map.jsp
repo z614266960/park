@@ -25,10 +25,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 
-
-
-
-
 <body data-type="tourist_index">
 <header class="am-topbar header">
 	<div class="am-container-1">
@@ -46,18 +42,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class=" am-topbar-left am-form-inline am-topbar-right" role="search">
       <ul class="am-nav am-nav-pills am-topbar-nav hw-menu">
       <li ><a href="AmusementCtrl/toTouristAmusementView">乐园城信息总览</a></li>
+      <li><a href="PassCtrl/toShowPassCard">PassCard信息</a></li>
       <li ><a href="FacilityCtrl/toTouristFacility">游乐项目信息 </a></li>
       <li ><a href="CateringCtrl/toTouristCateringView">餐饮服务</a></li>
       <li class="hw-menu-active"><a href="LoginCtrl/toTourist_map">导览地图</a></li>
-      <li><a href="LoginCtrl/toLogin">登录&注册</a></li>
+      <li><a href="LoginCtrl/toLogin">退出登录</a></li>
     </ul>
     </div>
 
   </div>
   </div>
 </header>
-<div id="baidu_map" style="width: 100%;height: 500px;overflow: hidden;margin:0;margin-top: 80px;"></div>
-<div id="r-result"></div>
+<div id="baidu_map" style="width: 100%;height: 100%;overflow: hidden;margin:0;margin-top: 80px;"></div>
+<!-- <div id="r-result"></div> -->
 
 </body>
 <!--[if lt IE 9]>
@@ -106,7 +103,7 @@ var end;
             BMAP_NORMAL_MAP,
             BMAP_HYBRID_MAP
         ]}));	  
-	map.setCurrentCity(city);          // 设置地图显示的城市 此项是必须设置的
+	map.setCurrentCity(city);          // 设置地图显示的城市
 	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
 	
 	var marker = new BMap.Marker(point);
@@ -125,8 +122,8 @@ var end;
 		fontFamily:"微软雅黑"
 	});
 	map.addOverlay(label);
-	var walking = new BMap.WalkingRoute(map, {renderOptions: {map: map, panel: "r-result", autoViewport: true}});
-	walking.search(start, end);
+	//var walking = new BMap.WalkingRoute(map, {renderOptions: {map: map, panel: "r-result", autoViewport: true}});
+	//walking.search(start, end);
 	
 </script>
 </html>
