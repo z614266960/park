@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.java.po.Amusement_facility;
+import com.java.po.FacilityWithPosition;
 import com.java.po.User;
 import com.java.service.IFacilityInfoService;
 import com.java.service.ILoginInfoService;
@@ -35,7 +36,7 @@ public class FacilityController {
 	@RequestMapping("/toFacilityView")
 	public String toFacilityView(HttpServletRequest req){
 		
-		List<Amusement_facility> list = facilityService.getFacilityList();
+		List<FacilityWithPosition> list = facilityService.getFacilityList();
 		req.setAttribute("list", list);
 		
 		return "facilityView";
@@ -54,7 +55,7 @@ public class FacilityController {
 	@RequestMapping("/toTouristFacility")
 	public String toTouristFacility(HttpServletRequest req){
 		
-		List<Amusement_facility> list = facilityService.getFacilityList();
+		List<FacilityWithPosition> list = facilityService.getFacilityList();
 		req.setAttribute("list", list);
 		
 		return "facility";
@@ -104,11 +105,12 @@ public class FacilityController {
 	
 	@RequestMapping("/updateFacility")
 	@ResponseBody
-	public String updateFacility(HttpSession session,HttpServletResponse resp,String id,String name,String open_time,String close_time,String people,String information,String facility_img_path,String notice,String open_day,String close_day){
+	public String updateFacility(HttpSession session,HttpServletResponse resp,String id,String name,String open_time,String close_time,String people,
+			String information,String facility_img_path,String notice,String open_day,String close_day,String lng,String lat){
 		
 		SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss"); // 
 	    java.util.Date d = null; 
-	    Amusement_facility facility = new Amusement_facility();
+	    FacilityWithPosition facility = new FacilityWithPosition();
 	    try {
 	    	facility.setId(Integer.parseInt(id));
 	    	facility.setName(name);
@@ -116,11 +118,13 @@ public class FacilityController {
 			facility.setClose_time(new java.sql.Time(format.parse(close_time+":00").getTime()));
 			facility.setPeople(people);
 			facility.setInformation(information);
-			facility.setFacility_img(facility_img_path);
+			facility.setFacility_img(facility_img_path.trim());
 			facility.setNotice(notice);
 			facility.setOpen_day(Integer.parseInt(open_day));
 			facility.setClose_day(Integer.parseInt(close_day));
 			facility.setNotice(notice);
+			facility.setLng(lng);
+			facility.setLat(lat);
 			facilityService.updateFacility(facility);
 			
 		} catch (ParseException e) {

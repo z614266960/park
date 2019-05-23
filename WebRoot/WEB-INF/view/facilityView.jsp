@@ -258,7 +258,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				
 				                                        </div>
 				                                    </div>
-				                                  
+				                                    <div class="am-form-group">
+				                                        <label for="facilityName" class="am-u-sm-3 am-form-label">LNG <span class="tpl-form-line-small-title">Facility</span></label>
+				                                        <div class="am-u-sm-9">
+				                                            <input type="text" class="tpl-form-input" value="${item.lng}" disabled="disabled">
+				                                        </div>
+				                                    </div><div class="am-form-group">
+				                                        <label for="facilityName" class="am-u-sm-3 am-form-label">LAT <span class="tpl-form-line-small-title">Facility</span></label>
+				                                        <div class="am-u-sm-9">
+				                                            <input type="text" class="tpl-form-input" value="${item.lat}" disabled="disabled">
+				                                        </div>
+				                                    </div>
 				                                 <div class="am-form-group">
                                         			<div class="am-u-sm-9 am-u-sm-push-3">
                                         				<button type="button" class="am-btn am-btn-danger tpl-btn-bg-color-success " onclick="del(this);">删除</button>
@@ -283,6 +293,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             </div>
         </div>
     </div>
+    </div>
+    
+    <div id = "win" style="position:absolute;width:500px;height:500px;top:50px;left:50ox;backgroud:red;">
     </div>
     <script src="assets/js/amazeui.min.js"></script>
     <script src="assets/js/amazeui.datatables.min.js"></script>
@@ -326,6 +339,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		var form = new FormData(document.getElementById(id));
 		var fileRealPath = imgsrc;
 		
+		var lng = $(groups.get(10)).find("input:first").val();
+		var lat = $(groups.get(11)).find("input:first").val();
 		$.ajax({
 			url : "LoginCtrl/uploadFile",
 			data : form,
@@ -350,7 +365,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		    			"close_time":close_time,
 		    			"information":information,
 		    			"facility_img_path":fileRealPath,
-		    			"notice":notice
+		    			"notice":notice,
+		    			"lng":lng,
+		    			"lat":lat
 		    		},
 		    		success:function(result){//回调函数
 		    			if(result=="ok"){

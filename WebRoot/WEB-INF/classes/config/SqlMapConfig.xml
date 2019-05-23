@@ -21,6 +21,7 @@
        <typeAlias alias="Map_point" type="com.java.po.Map_point"/>
        <typeAlias alias="Amusement_information" type="com.java.po.Amusement_information"/>
        <typeAlias alias="PassCard" type="com.java.po.PassCard"/>
+       <typeAlias alias="FacilityWithPosition" type="com.java.po.FacilityWithPosition"/>
   	</typeAliases>  
     
 </configuration>

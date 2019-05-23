@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.java.dao.IFacilityInfoDao;
 import com.java.po.Amusement_facility;
+import com.java.po.FacilityWithPosition;
 import com.java.service.IFacilityInfoService;
 
 @Service
@@ -18,11 +19,13 @@ public class FacilityInfoServiceImpl implements IFacilityInfoService {
 	public void addFacility(Amusement_facility facility) {
 		facilityDao.addFacility(facility);
 	}
-	public void updateFacility(Amusement_facility facility) {
+	public void updateFacility(FacilityWithPosition facility) {
 		facilityDao.updateFacility(facility);
+		facilityDao.deletePosition(facility);
+		facilityDao.insertPosition(facility);
 	}
 
-	public List<Amusement_facility> getFacilityList() {
+	public List<FacilityWithPosition> getFacilityList() {
 		return facilityDao.getFacilityList();
 	}
 	

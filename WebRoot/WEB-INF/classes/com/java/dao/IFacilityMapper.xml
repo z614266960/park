@@ -11,15 +11,26 @@
        values(#{name},#{open_time},#{close_time},#{people},#{information},#{facility_img},#{notice},#{open_day},#{close_day})
    </insert>
 	
-	<select id="getFacilityList" resultType="Amusement_facility">
-     select * from amusement_facility
+	<select id="getFacilityList" resultType="FacilityWithPosition">
+     SELECT
+		amusement_facility.* ,position.lng,position.lat
+	FROM
+		amusement_facility
+	LEFT JOIN position ON amusement_facility.id = position.facilityId
    </select>
    <select id="getFacilityListWithName" resultType="Amusement_facility" parameterType="String">
      select * from amusement_facility where name like CONCAT('%',#{name},'%' )
    </select>
-   <update id="updateFacility" parameterType="Amusement_facility">
+   <update id="updateFacility" parameterType="FacilityWithPosition">
    		 update amusement_facility set name=#{name},open_time=#{open_time},close_time=#{close_time},people=#{people},information=#{information},facility_img=#{facility_img},notice=#{notice},open_day=#{open_day},close_day=#{close_day} where id=#{id}  
    </update>
+   <insert id="insertPosition" parameterType="FacilityWithPosition" >
+       insert into `position` (facilityId,lng,lat)
+       values(#{id},#{lng},#{lat})
+   </insert>
+   <delete id="deletePosition" parameterType="FacilityWithPosition">  
+        delete from position where facilityId = #{id}  
+   </delete>
    <delete id="deleteFacility" parameterType="int">  
         delete from amusement_facility where id = #{id}  
    </delete>  	
